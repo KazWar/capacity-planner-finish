@@ -1,0 +1,130 @@
+
+#schedule-mechanics {
+	.schedules, .mechanics{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		width: 100%;
+		.schedule, .mechanic{
+			display: flex;
+			justify-content: space-between;
+			float: left;
+			width: 100%;
+			clear: both;
+			padding: 5px 10px;
+			line-height: 25px;
+			background: #fff;
+			margin-bottom: 10px;
+
+			> div{
+
+				> span{
+					float: left;
+					&.button{
+						border: 1px solid #C5C5CB;
+						color: #C5C5CB;
+						height: 100%;
+						border-radius: 15px;
+						text-align: center;
+						font-size: 12px;
+						line-height: 25px;
+						width: 75px;
+						margin-left: 15px;
+						&.danger {
+							border: 1px solid #dc0000;
+							color: #dc0000;
+							&:not(:hover) {
+								border: 1px solid #dc0000;
+								color: #dc0000;
+							}
+						}
+						&:hover {
+							&:not(.danger) {
+								border: 1px solid #dc0000;
+								color: #dc0000;
+							}
+							cursor: pointer;
+						}
+					}
+
+					span, .icons{
+						line-height: 25px;
+						vertical-align: middle;
+						float: left;
+					}
+					span{
+						line-height: 25px;
+						display: inline-block;
+					}
+				}
+			}
+
+			.push-left{
+				> span{
+					margin-right: 5px;
+				}
+			}
+			.push-right{
+				> span{
+					cursor: pointer;
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+
+
+	.modal-content{
+		margin-top: 15px;
+	}
+
+	.inner{
+		float: left!important;
+		width: 100%!important;
+		clear: both!important;
+		padding: 15px 0;
+	}
+
+	.details{
+		float: left;
+		width: 100%;
+		.item, .qualification{
+			float: left;
+			width: 100%;
+			font-size: 14px;
+			margin-top: 0!important;
+			margin-bottom: 5px;
+			label{
+				float: left;
+				width: 75px;
+				margin-right: 10px;
+				margin-top: 0px;
+			}
+			span{
+				float: left;
+			}
+		}
+		&.qualification-list{
+			max-height: 450px;
+			overflow: auto;
+		}
+		.qualification{
+			margin-bottom: 15px;
+		}
+	}
+
+
+	.form{
+		margin-top: 15px;
+		float: left;
+		width: 100%;
+		.picker-container {
+			width: 300px !important;
+		}
+	}
+}
+.content-row {
+	&.monitor-row {
+		min-width: 445px;
+	}
+}

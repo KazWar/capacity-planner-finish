@@ -1,0 +1,60 @@
+.settings{
+	width: 100%;
+	float: left;
+	padding: 0 10px;
+	.btn{
+		float: left;
+		margin-right: 15px;
+		margin-top: 0;
+	}
+	.item{
+		width: 100%;
+		max-width: 600px;
+		float: left;
+		clear: both;
+		margin-bottom: 5px;
+		.picker-container{
+			float: left;
+			clear: both;
+			width: calc(100% - 50px);
+		}
+		> span{
+			float: right;
+			display: inline-block;
+			line-height: 52px;
+			margin-top: 37px;
+			margin-left: 5px;
+		}
+	}
+	.hidden-series{
+		float: left;
+		width: 600px;
+		clear: both;
+		margin-top: 20px;
+		.item{
+			width: 100%;
+		}
+		> span{
+			line-height: 35px;
+			vertical-align: middle;
+		}
+		.buttons{
+			float: right;
+			.btn:last-child{
+				margin: 0;
+			}
+		}
+	}
+}
+
+.btn{
+	padding: 0 15px;
+	background: #0079d3;
+	line-height: 30px;
+	height: 35px;
+	vertical-align: middle;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+}

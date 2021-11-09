@@ -1,0 +1,38 @@
+[
+	{
+		"level": "Administrator",
+		"levelIcon": "mdi-account-tie",
+		"color": "#48C9B0",
+		"user": "Kazik Waraksa",
+		"description": "Intern",
+		"login": "k.waraksa@oxplus.com",
+		"phone": "+31 6 111 222 333",
+		"status": true,
+		"createdOn": "1/25/2020",
+		"updatedOn": "11/25/2020"
+	},
+	{
+		"level": "Regular User",
+		"levelIcon": "mdi-account",
+		"color": "#F0B27A",
+		"user": "Richard Noppert",
+		"description": "OXplus manager",
+		"login": "r.nopperts@oxplus.com",
+		"phone": "+31 6 222 333 111",
+		"status": true,
+		"createdOn": "4/12/2020",
+		"updatedOn": "11/15/2020"
+	},
+	{
+		"level": "Guest User",
+		"levelIcon": "mdi-briefcase-account",
+		"color": "#C39BD3",
+		"user": "Matthijs Kuijpers",
+		"description": "Fontys teacher",
+		"login": "m.kuijpers@fontys.nl",
+		"phone": "+31 6 333 222 111",
+		"status": true,
+		"createdOn": "11/1/2020",
+		"updatedOn": "12/18/2020"
+	}
+]

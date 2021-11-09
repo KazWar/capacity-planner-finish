@@ -1,0 +1,51 @@
+
+@media only screen and (max-width : 1400px) {
+	.filters .filters-left .filter-button {
+		width: 120px;
+	}
+	.service-request-mbn {
+		.chart {
+			position: relative;
+			height: calc(100% - 460px);
+
+			* {
+				//font-size: 12px!important;
+			}
+
+			.chart-content {
+				height: 100% !important;
+
+				.chart-left {
+					.chart-labels {
+						max-height: calc(100vh - 635px) !important;
+
+						.chart-label {
+							margin-left: 10px;
+							width: 230px;
+							height: 40px;
+
+							span {
+								height: 40px;
+								line-height: 40px;
+							}
+						}
+					}
+				}
+
+				.chart-right {
+					.chart-visualization-container {
+						.chart-visualization {
+							.chart-row {
+								height: 40px;
+
+								.chart-cell {
+									height: 40px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

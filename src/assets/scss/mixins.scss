@@ -1,0 +1,16 @@
+@mixin icon-mask($icon:null, $size:40px, $position: 50%) {
+	-webkit-mask: url("/static/icon/icoon_#{$icon}.svg") no-repeat $position $position;
+	mask: url("/static/icon/icoon_#{$icon}.svg") no-repeat $position $position;
+	-webkit-mask-size: $size;
+	mask-size: $icon;
+}
+@mixin before-icon-mask($icon:null, $size:40px, $position: 50%) {
+	&:before {
+		@include icon-mask($icon, $size, $position)
+	}
+}
+@mixin after-icon-mask($icon:null, $size:40px, $position: 50%) {
+	&:after {
+		@include icon-mask($icon, $size, $position)
+	}
+}

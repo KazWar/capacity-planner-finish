@@ -1,0 +1,211 @@
+@import '../variables/colors';
+
+aside{
+    position: fixed;
+    width: 280px;
+    left: 0;
+    bottom: 0;
+    height: calc(100% - 70px);
+    transition-duration: .2s;
+    border-right: 1px solid var(--d-border);
+    background: var(--d-grey);
+    > ul{
+        float: left;
+        width: 100%;
+        clear: both;
+        > li{
+            float: left;
+            clear: both;
+            width: 100%;
+            border-bottom: 1px solid var(--d-border);
+            cursor: pointer;
+            line-height: 30px;
+            vertical-align: middle;
+            margin: 0;
+            color: var(--d-third-white);
+            
+            position: relative;
+            &:after{
+                width: 2px;
+                height: 0;
+                content: '';
+                background: var(--d-red);
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition-duration: .2s;
+                transition-delay: .2s;
+            }
+
+            .main-nav-item{
+                float: left;
+                width: 100%;
+                clear: both;
+                position: relative;
+                padding: 15px;
+                transition-duration: .2s;
+                overflow: hidden;
+                span{
+                    float: left;
+                    + i{
+                        transform: rotate(-180deg);
+                        transition-duration: .2s;
+                    }
+                }
+                .mdi{
+                    float: left;
+                    font-size: 20px;
+                    &.link-icon{
+                        margin-right: 20px;
+                        padding-right: 20px;
+                        border-right: 1px solid var(--d-border-light);
+                    }
+                }
+            }
+
+            .nested-items{
+                float: left;
+                clear: both;
+                width: 100%;
+                background: var(--d-black);
+                max-height: 0px;
+                transition: max-height .35s ease-out;
+                overflow: hidden;
+                li{
+                    float: left;
+                    width: 100%;
+                    clear: both;
+                    padding: 10px 0 10px 60px;
+                    transition-duration: .2s;
+                    margin: 0;
+                    &:hover{
+                        background: rgba(255,255,255,.02);
+                    }
+                }
+            }
+            &:hover, &.active{
+                color: var(--d-main-white);
+                .main-nav-item{
+                    background: rgba(255,255,255,.02);
+                    .mdi:first-child{
+                        color: var(--d-red);
+                    }
+                }
+            }
+            &.active{
+                padding-bottom: 0;
+                &:after{
+                    height: 100%;
+                    transition: height .1s ease-in;
+                }
+                .main-nav-item span + i{
+                    transform: rotate(-270deg);
+                }
+                .nested-items{
+                    max-height: 999px;
+                    transition: max-height .35s ease-in;
+                }
+            }
+
+        }
+    }
+    li.current{
+        pointer-events: none;
+        background: rgba(255,255,255,.02);
+    }
+    &.collapsed{
+        > ul{
+            > li{
+                .main-nav-item{
+                    padding: 10px 0 5px 0;
+                    width: 100%;
+                    vertical-align: middle;
+                    text-align: center;
+                    > *{
+                        float: left;
+                        width: 100%;
+                        clear: both;
+                    }
+                    .mdi{
+                        padding: 0;
+                        margin: 0;
+                        border: none;
+                        line-height: 15px;
+                        &.push-right{
+                            transform: rotate(90deg);
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                    span{
+                        font-size: 12px;
+                    }
+                }
+                .nested-items{
+                    li{
+                        float: left;
+                        padding: 0 5px;
+                        font-size: 11px;
+                        &:first-child{
+                            padding-top: 5px;
+                        }
+                        &:last-child{
+                            padding-bottom: 5px;
+                        }
+                        // text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    aside{
+        width: 77px;
+        > ul{
+            > li{
+                .main-nav-item{
+                    padding: 10px 0 5px 0;
+                    width: 100%;
+                    vertical-align: middle;
+                    text-align: center;
+                    > *{
+                        float: left;
+                        width: 100%;
+                        clear: both;
+                    }
+                    .mdi{
+                        padding: 0!important;
+                        margin: 0!important;
+                        border: none!important;
+                        line-height: 15px;
+                        &.push-right{
+                            transform: rotate(90deg);
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                    span{
+                        font-size: 12px;
+                    }
+                }
+                .nested-items{
+                    li{
+                        float: left;
+                        padding: 0 5px;
+                        font-size: 11px;
+                        &:first-child{
+                            padding-top: 5px;
+                        }
+                        &:last-child{
+                            padding-bottom: 5px;
+                        }
+                        // text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,300 @@
+@import 'variables/colors';
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;700;800&display=swap');
+
+.d-root{
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	background: var(--d-black);
+	color: var(--d-main-white);
+	font-size: 16px;
+	font-family: 'Muli', sans-serif!important;
+}
+
+.d-root * {
+	box-sizing: border-box;
+
+
+	.d-root {
+		.push-left {
+			float: left !important;
+		}
+
+		.push-right {
+			float: right !important;
+		}
+
+		.content-wrap {
+			width: 100%;
+			float: left;
+			position: relative;
+			height: calc(100% - 80px);
+
+			section {
+				width: calc(100% - 280px);
+				transition-duration: .2s;
+			}
+
+			&.collapsed {
+				aside {
+					width: 77px;
+				}
+
+				section {
+					width: calc(100% - 77px);
+				}
+			}
+		}
+
+		.card {
+			background: var(--d-grey);
+			padding: 20px 0;
+
+			::v-deep > h1, ::v-deep > .ps {
+				padding: 0 20px;
+			}
+
+			h1 {
+				font-size: 20px;
+				color: var(--d-main-white);
+
+				.mdi {
+					float: right;
+					color: var(--d-main-white);
+					cursor: pointer;
+					width: 30px;
+					height: 30px;
+					text-align: center;
+					background: var(--d-black);
+					line-height: 30px;
+					vertical-align: middle;
+					position: relative;
+					top: -5px;
+
+					&:hover {
+						color: var(--d-red);
+					}
+				}
+			}
+		}
+
+		.row {
+			float: left;
+			width: 100%;
+			clear: both;
+
+			.col-25 {
+				width: 25%;
+			}
+
+			.col-34 {
+				width: 34%;
+
+				.b-table {
+					table {
+						min-width: 500px;
+					}
+				}
+
+				+ .col-66 {
+					width: calc(66% - 20px);
+					margin-left: 20px;
+				}
+			}
+
+			.col-50 {
+				width: 50%;
+			}
+
+			.col-66 {
+				width: 66%;
+
+				.b-table {
+					table {
+						min-width: 955px;
+					}
+				}
+			}
+
+			.col-75 {
+				width: 75%;
+			}
+
+			.col-100 {
+				width: 100%;
+			}
+
+			.clear {
+				clear: both;
+			}
+		}
+
+		::v-deep .b-table {
+			width: 100%;
+			clear: both;
+			height: calc(100% - 113px);
+			overflow: hidden;
+			margin-top: 20px;
+
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				// min-width: 400px;
+				// table-layout: fixed;
+				overflow: auto;
+				// max-width: 100%;
+				thead {
+					tr {
+						border-bottom: 1px solid rgba(255, 255, 255, .05);
+
+						th {
+							color: var(--d-main-white);
+						}
+					}
+				}
+
+				tbody {
+					tr {
+						border-bottom: 1px solid rgba(255, 255, 255, .05);
+
+						&:hover {
+							background: rgba(255, 255, 255, .02);
+						}
+
+						&:nth-child(1), &:nth-child(2n+1) {
+							background: rgba(0, 0, 0, .1);
+						}
+					}
+				}
+
+				th, td {
+					text-align: left;
+					padding: 0 3px;
+					line-height: 30px;
+				}
+
+				th {
+					color: rgba(255, 255, 255, .4);
+					font-weight: 400;
+					cursor: pointer;
+					font-weight: 700;
+
+					.th-wrap {
+						position: relative;
+
+						.icon {
+							position: relative;
+							display: inline-block;
+
+							&.is-desc {
+								transform: rotate(180deg);
+							}
+						}
+					}
+				}
+
+				td {
+					line-height: 34px;
+
+					&.center-text {
+						text-align: center;
+					}
+				}
+			}
+
+			.field.table-mobile-sort {
+				display: none;
+			}
+
+			.pagination {
+				float: left;
+				width: 100%;
+				clear: both;
+				margin-top: 5px;
+
+				.mdi {
+					color: rgba(255, 255, 255, .4);
+					float: left;
+					line-height: 30px;
+				}
+
+				.info {
+					font-size: 12px;
+					font-weight: 600;
+					float: right;
+					line-height: 30px;
+					margin-right: 10px;
+					min-width: 150px;
+					text-align: right;
+				}
+			}
+		}
+	}
+
+
+	@media screen and (max-width: 1120px) {
+		.d-root {
+			.content-wrap {
+				aside {
+					width: 77px;
+				}
+
+				section {
+					width: calc(100% - 77px);
+				}
+
+				&.collapsed {
+					aside {
+						width: 0;
+					}
+
+					section {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+		.d-root {
+			.row div[class^="col-"] {
+				width: 100% !important;
+				clear: both;
+				margin: 0;
+				margin-bottom: 15px;
+			}
+
+			.b-table .pagination.is-simple {
+				margin-top: 0;
+
+				a {
+					display: inline-block;
+					width: 35px !important;
+					height: 35px;
+					background: var(--d-black);
+					text-align: center;
+					line-height: 35px;
+					vertical-align: middle;
+					margin-right: 5px;
+
+					> span, > span > .mdi {
+						display: block;
+						width: 100%;
+						height: 100%;
+						position: relative;
+
+						&:before {
+							width: 100%;
+							height: 100%;
+							line-height: 35px;
+							vertical-align: middle;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"administration": {
+		"cards": [
+			{
+				"icon":"mdi-account",
+				"name": "user",
+				"title":"My account",
+				"text":"Personal data, system preferences, security settings."
+			},
+			{
+				"icon":"mdi-account-multiple",
+				"name": "users",
+				"title":"Users",
+				"text":"User accounts in my organization and their permissions."
+			},
+			{
+				"icon":"mdi-office-building",
+				"name": "organizations",
+				"title":"Organizations",
+				"text":"My customers, their users, permissions and other details."
+			},
+			{
+				"icon":"mdi-account-box-multiple",
+				"name": "profiles",
+				"title":"Profiles",
+				"text":"Security profiles of customers and organizations."
+			},
+			{
+				"icon":"mdi-cogs",
+				"name": "settings",
+				"title":"System preferences",
+				"text":"System preferences of my organization."
+			}
+		]
+	}
+}

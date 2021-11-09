@@ -1,0 +1,259 @@
+@import '../variables/colors';
+body .d-root .ps{
+    float: left;
+    width: 100%;
+    .ps__thumb-y{
+        width: 4px!important;
+        right: 2px!important;
+        background: rgba(0,0,0,.1)!important;
+        transition-duration: .1s;
+    }
+    .ps__thumb-x{
+        height: 6px!important;
+        background: rgba(0,0,0,.1)!important;
+        transition-duration: .1s;
+    }
+    &:hover{
+        .ps__thumb-y{
+            width: 5px!important;
+            background: rgba(0,0,0,.2)!important;
+        }
+    }
+    .ps__rail-y, .ps__rail-x{
+        background: none!important;
+    }
+    .ps__rail-x{
+        bottom: 0!important;
+    }
+}
+section{
+    float: right;
+    clear: both;
+    position: relative;
+    height: 100%;
+    .page-header, .page-content{
+        float: left;
+        width: 100%;
+        clear: both;
+        position: relative;
+    }
+    .page-header{
+        padding: 20px;
+        background: var(--d-grey);
+        border-bottom: 1px solid var(--d-border);
+    }
+    .page-content{
+        padding: 20px;
+        height: 100%;
+    }
+
+    .summary-items{
+        float: left;
+        width: 100%;
+        clear: both;
+        margin-bottom: 20px;
+        > li{
+            padding: 20px!important;
+        }
+        li{
+            float: left;
+            width: calc(100% / 5 - 15px);
+            margin: 0;
+            margin-right: 18px;
+            background: var(--d-grey);
+            position: relative;
+
+            .details{
+                float: left;
+                clear: both;
+                width: 100%;
+                position: relative;
+                height: 55px;
+                .mdi{
+                    font-size: 30px;
+                    float: left;
+                    clear: both;
+                }
+                .title{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    display: block;
+
+                }
+                .value{
+                    position: absolute;
+                    right: 0;
+                    bottom: 4px;
+                    font-size: 35px;
+                    display: block;
+                    line-height: 25px;
+                }
+            }
+            .bar{
+                margin-top: 15px;
+                float: left;
+                clear: both;
+                width: 100%;
+                background: var(--d-border);
+                border-radius: 3px;
+                height: 3px;
+                position: relative;
+                .filled{
+                    float: left;
+                    height: 100%;
+                    border-radius: 3px;
+                    max-width: 0;
+                    width: 100%;
+                    transition-duration: .2s;
+                }
+            }
+            &:last-child{
+                margin: 0;
+            }
+        }
+    }
+
+    .full-height{
+        height: calc(100% - 183px);
+        > div[class^="col-"]{
+            height: 100%;
+        }
+        ::v-deep .ps{
+            float: left;
+            width: 100%;
+            .ps__thumb-y{
+                width: 4px!important;
+                right: 2px!important;
+                background: rgba(0,0,0,.1)!important;
+                transition-duration: .1s;
+            }
+            .ps__thumb-x{
+                height: 6px!important;
+                background: rgba(0,0,0,.1)!important;
+                transition-duration: .1s;
+            }
+            &:hover{
+                .ps__thumb-y{
+                    width: 5px!important;
+                    background: rgba(0,0,0,.2)!important;
+                }
+            }
+            .ps__rail-y, .ps__rail-x{
+                background: none!important;
+            }
+            .ps__rail-x{
+                bottom: 0!important;
+            }
+        }
+        ::v-deep h1{
+            float: left;
+            width: 100%;
+            clear: both;
+            color: var(--d-main-white);
+            ::v-deep .mdi{
+                float: right;
+                cursor: pointer;
+                background: var(--d-black);
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                line-height: 35px;
+                vertical-align: middle;
+                position: relative;
+                // top: -5px;
+                color: var(--d-main-white);
+                &:hover{
+                    color: var(--d-red);
+                }
+            }
+        }
+        ::v-deep .card{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            float: left;
+            .ps{
+                height: calc(100% - 27px);
+            }
+            ::v-deep .b-table{
+                height: auto;
+                .table-wrapper{
+                    overflow: auto;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            ::v-deep .pagination.is-simple{
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+.ps{
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@media screen and (max-width: 980px) {
+    section {
+        .page-content{
+            height: calc(100% - 50px);
+            overflow: auto;
+            .summary-items{
+                li{
+                    width: calc(50% - 10px);
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                    &:nth-child(2n){
+                        margin-right: 0;
+                    }
+                    &:nth-last-child(1), &:nth-last-child(2){
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .full-height{
+                height: auto!important;
+            }
+            ::v-deep .b-table{
+                height: auto!important;
+                min-width: 500px;
+                .pagination.is-simple{
+                    position: relative;
+                    bottom: 0;
+                    float: left;
+                    clear: both;
+                    padding: 0;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    section {
+        .page-content{
+            .summary-items{
+                li{
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 20px!important;
+                    &:nth-last-child(1){
+                        margin-bottom: 0!important;
+                    }
+                }
+            }
+        }
+    }
+}

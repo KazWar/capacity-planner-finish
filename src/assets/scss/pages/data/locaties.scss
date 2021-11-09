@@ -1,0 +1,41 @@
+.data-col-item {
+	position: relative;
+	background: white;
+	border-bottom: 2px solid #C5C5CB;
+	box-sizing: border-box;
+	height: 50px;
+	line-height: 50px;
+	display: flex;
+	justify-content: flex-start;
+	.col {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 20px;
+		float: left;
+		width: 20%;
+		&:last-child{
+			width: 40px;
+			float: right;
+			padding: 0;
+			display: flex;
+			align-self: center;
+			position: absolute;
+			right: 0;
+			z-index: 1;
+		}
+
+	}
+
+	&:not(:first-child) {
+		margin-top: 20px;
+	}
+
+	&:hover {
+		cursor: pointer;
+		color: #0079d3;
+		border-bottom: 2px solid #0079d3;
+	}
+}

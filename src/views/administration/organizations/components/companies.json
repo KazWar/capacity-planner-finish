@@ -1,0 +1,35 @@
+[
+	{
+		"name": "Fontys",
+		"permissions": [
+			"perm-1",
+			"perm-2",
+			"perm-3",
+			"perm-4",
+			"perm-5",
+			"perm-6"
+		]
+	},
+	{
+		"name": "OXplus",
+		"permissions": [
+			"perm-4",
+			"perm-5",
+			"perm-6"]
+	},
+	{
+		"name": "NS",
+		"permissions": [
+			"perm-3",
+			"perm-4"
+		]
+	},
+	{
+		"name": "Jumbo",
+		"permissions": [
+			"perm-1",
+			"perm-2"
+		]
+	}
+]
+

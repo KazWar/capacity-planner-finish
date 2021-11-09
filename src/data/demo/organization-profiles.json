@@ -1,0 +1,32 @@
+[
+	{
+		"levelIcon": "mdi-account",
+		"color": "#F0B27A",
+		"name": "user",
+		"parent": "",
+		"status": true,
+		"createdOn": "12/11/2020",
+		"updatedOn": "12/12/2020",
+		"updatedBy": "Henk"
+	},
+	{
+		"levelIcon": "mdi-account-tie",
+		"color": "#48C9B0",
+		"name": "admin",
+		"parent": "",
+		"status": true,
+		"createdOn": "12/11/2020",
+		"updatedOn": "12/12/2020",
+		"updatedBy": "Jaap"
+	},
+	{
+		"levelIcon": "mdi-account",
+		"color": "#F0B27A",
+		"name": "intern",
+		"parent": "user",
+		"status": true,
+		"createdOn": "12/11/2020",
+		"updatedOn": "12/12/2020",
+		"updatedBy": "Henk"
+	}
+]

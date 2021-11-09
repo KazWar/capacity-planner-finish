@@ -1,0 +1,31 @@
+$colors: (
+    light-blue: rgb(0, 121, 211),
+    default-blue: rgb(0, 48, 130),
+    dark-blue: rgb(0, 48, 130),
+
+    light-orange: none,
+    default-orange: rgb(255, 120, 0),
+    dark-orange: none,
+
+    light-grey: rgb(230, 230, 233),
+    default-grey: rgb(210, 210, 212),
+    dark-grey: rgb(58, 59, 60),
+
+    light-red: none,
+    default-red: rgb(220, 0, 0),
+    dark-red: none,
+
+    light-green: none,
+    default-green: rgb(0, 220, 0),
+    dark-green: none,
+
+    light-yellow: none,
+    default-yellow: rgb(255, 201, 23),
+    dark-yellow: none
+);
+
+$screen: (
+    min-width: 799px,
+    max-width: 800px
+);
+

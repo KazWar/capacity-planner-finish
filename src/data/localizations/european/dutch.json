@@ -1,0 +1,36 @@
+{
+	"administration": {
+		"cards": [
+			{
+				"icon":"mdi-account",
+				"name": "user",
+				"title":"Mijn account",
+				"text":"Persoonlijke gegevens, systeem en beveiligings instellingen."
+			},
+			{
+				"icon":"mdi-account-multiple",
+				"name": "users",
+				"title":"Gebruikers",
+				"text":"Gebruikers accounts in mijn organisatie en hun rechten."
+			},
+			{
+				"icon":"mdi-office-building",
+				"name": "organizations",
+				"title":"Organisaties",
+				"text":"Onze klanten, hun gebruikers, rechten en andere gegevens."
+			},
+			{
+				"icon":"mdi-account-box-multiple",
+				"name": "profiles",
+				"title":"Organisatie profielen",
+				"text":"Beveiligings profielen van klanten en organisaties."
+			},
+			{
+				"icon":"mdi-cogs",
+				"name": "settings",
+				"title":"Systeem instellingen",
+				"text":"Systeem voorkeuren van mijn organisatie."
+			}
+		]
+	}
+}

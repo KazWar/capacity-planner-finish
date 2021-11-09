@@ -1,0 +1,58 @@
+[
+	{
+		"id":"A",
+		"name":"Geen kennis/bevoegdheid/opleiding"
+	},
+	{
+		"id":"B",
+		"name":"Onvoldoende tijd/korte overstand"
+	},
+	{
+		"id":"C",
+		"name":"Overdracht dienst"
+	},
+	{
+		"id":"C2",
+		"name":"Diagnoseopdracht MBN"
+	},
+	{
+		"id":"D",
+		"name":"Geen onderdelen aanwezig"
+	},
+	{
+		"id":"E",
+		"name":"Geen outillage/gereedschap"
+	},
+	{
+		"id":"F",
+		"name":"Noodherstelling uitgevoerd"
+	},
+	{
+		"id":"G",
+		"name":"Weersomstandigheden"
+	},
+	{
+		"id":"H",
+		"name":"Materieel niet afgekomen"
+	},
+	{
+		"id":"I",
+		"name":"Geen assistentie aanwezig"
+	},
+	{
+		"id":"J",
+		"name":"Geen geschikt behandelspoor"
+	},
+	{
+		"id":"K",
+		"name":"Geen oorzaak gevonden"
+	},
+	{
+		"id":"L",
+		"name":"Geen defect aangetroffen"
+	},
+	{
+		"id":"M",
+		"name":"Milieuregelgeving"
+	}
+]

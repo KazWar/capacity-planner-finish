@@ -1,0 +1,38 @@
+[
+	{
+		"id": "ADMIN",
+		"name": "Alle verrijkingen op de herstelregeling"
+	},
+	{
+		"id": "BIJSTUUR",
+		"name": "Bijsturing vervoerder"
+	},
+	{
+		"id": "DIAGNOSE",
+		"name": "Diagnose laten uitvoeren"
+	},
+	{
+		"id": "GEW_WVB",
+		"name": "Geweigerd door werkvoorbereiding"
+	},
+	{
+		"id": "NIET GEDAAN",
+		"name": "Na orderacceptatie niet uitgevoerd"
+	},
+	{
+		"id": "ODH",
+		"name": "Gepland onderhoud"
+	},
+	{
+		"id": "PRIO",
+		"name": "Niet kunnen uitvoeren door MBN prioritering"
+	},
+	{
+		"id": "TOEWIJZING",
+		"name": "Eerste of vervolgtoewijzing"
+	},
+	{
+		"id": "WELKOM",
+		"name": "WOA-->B"
+	}
+]

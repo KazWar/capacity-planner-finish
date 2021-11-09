@@ -1,0 +1,89 @@
+@media only screen and (max-width : 1791px) {
+	.page-content  {
+		& > .content {
+			padding-left: unquote('clamp(2vw, 5vw, 150px)') ;
+			padding-right: unquote('clamp(2vw, 5vw, 150px)') ;
+		}
+		.footer {
+			padding-left: unquote('clamp(2vw, 5vw, 150px)') ;
+			padding-right: unquote('clamp(2vw, 5vw, 150px)') ;
+		}
+	}
+}
+@media only screen and (max-width : 1500px) {
+	.flex-item {
+		width: calc(100% - 0%);
+	}
+
+	.flex-item > div {
+		width: inherit !important;
+	}
+}
+@media only screen and (max-width : 1400px) {
+	.page-content  {
+		& > .content {
+			padding-left: unquote('clamp(1vw, 2vw, 3vw)') ;
+			padding-right: unquote('clamp(1vw, 2vw, 3vw)') ;
+			.content-child-left {
+				margin-right: 7px;
+			}
+			.content-child-right {
+				margin-left: 7px;
+			}
+		}
+		.content-sidebar-left {
+			margin-right: 7px;
+		}
+		.content-sidebar-right {
+			margin-left: 7px;
+		}
+		.footer {
+			padding-left: unquote('clamp(1vw, 2vw, 3vw)') ;
+			padding-right: unquote('clamp(1vw, 2vw, 3vw)') ;
+		}
+	}
+	.filters .filters-left .filter-button {
+		width: 120px;
+	}
+	.service-request-mbn{
+		.chart{
+			position: relative;
+			height: calc(100% - 460px);
+			*{
+				//font-size: 12px!important;
+			}
+			.chart-content{
+				height: 100%!important;
+				.chart-left{
+					.chart-labels{
+						max-height: calc(100vh - 635px)!important;
+						.chart-label{
+							margin-left: 10px;
+							width: 230px;
+							height: 40px;
+							span{
+								height: 40px;
+								line-height: 40px;
+							}
+						}
+					}
+				}
+				.chart-right{
+					.chart-visualization-container{
+						.chart-visualization{
+							.chart-row{
+								height: 40px;
+								.chart-cell{
+									height: 40px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.data-table section .b-table table th:last-child, .data-table section .b-table table td:last-child {
+		width: auto;
+	}
+}

@@ -1,0 +1,204 @@
+
+$wireframeOpacity: 0;
+
+.equipment-sidebar {
+	width: 300px;
+	float: left;
+	background: white;
+	border-bottom: 2px solid #C5C5CB;
+	padding: 20px;
+
+	.equipment-sidebar-item {
+		position: relative;
+		height: 20px;
+
+		.equipment-sidebar-icon {
+			position: absolute;
+			left: 0;
+			z-index: 1;
+		}
+
+		.equipment-sidebar-content {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			padding-left: 40px;
+			padding-right: 20px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			color: #0079D3;
+			font-size: 14px;
+			font-family: 'Open Sans', sans-serif;
+			user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			-webkit-user-select: none;
+
+			&.selected {
+				font-weight: bold;
+			}
+		}
+
+		.equipment-sidebar-right {
+			position: absolute;
+			right: 0;
+			z-index: 1;
+		}
+
+		&:not(:first-child) {
+			margin-top: 20px;
+		}
+
+		&:hover {
+			cursor: pointer;
+			.equipment-sidebar-content {
+				font-weight: bold;
+			}
+		}
+	}
+}
+.equipment-content {
+	.equipment-col-item {
+		position: relative;
+		background: white;
+		border-bottom: 2px solid #C5C5CB;
+		box-sizing: border-box;
+		height: 50px;
+		line-height: 50px;
+		width: 380px;
+		.col {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 20px;
+			&-red {
+				color: #DC0000;
+			}
+			&-green {
+				color: #0B9126;
+			}
+			&:first-child {
+				width: 180px;
+			}
+			&:nth-child(2) {
+				&:not(:last-child) {
+					width: 160px;
+				}
+			}
+			&:last-child {
+				position: absolute;
+				right: -5px;
+			}
+		}
+
+
+		&:hover {
+			cursor: pointer;
+			color: #0079d3;
+			border-bottom: 2px solid #0079d3;
+		}
+		&.equipment-col-type {
+			width: 300px;
+			justify-content: space-between;
+			display: flex;
+		}
+	}
+}
+.icon-container {
+	position: relative;
+	overflow: hidden;
+	width: 20px;
+	height: 20px;
+
+	&.gebruiker {
+		.icons {
+			top: -5px;
+			left: -5px;
+		}
+	}
+
+	&.chevron-neerwaarts {
+		transition: all 0.3s ease;
+		.icons {
+			top: -10px;
+			left: -10px;
+		}
+		&.show {
+			.icons {
+				transform: rotate(-90deg);
+				-o-transform: rotate(-90deg);
+				-moz-transform: rotate(-90deg);
+				-webkit-transform: rotate(-90deg);
+			}
+		}
+	}
+
+	&.aanpassen {
+		margin-top: 10px;
+		width: 30px;
+		height: 30px;
+		.icons {
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.icons {
+		position: absolute;
+	}
+}
+.overlay {
+	z-index: 999;
+	.availability {
+		button {
+			display: inline-block;
+			vertical-align: middle;
+			height: 30px;
+			box-sizing: border-box;
+			border-radius: 10px;
+			border: 1px solid #C5C5CB;
+			color: #c5c5cb;
+			padding: 0 10px;
+			font-size: 16px;
+
+			&.selected, &:hover {
+				&.green {
+					color: #0B9126;
+					border: 1px solid #0B9126;
+				}
+				&.red {
+					color: #dc0000;
+					border: 1px solid #dc0000;
+				}
+			}
+
+			&:not(:first-child) {
+				margin-left: 15px;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+::v-deep .picker-container {
+	.title{
+		margin-top: 10px;
+	}
+	.timepicker-field {
+		width: -webkit-fill-available !important;
+		//width: calc(100% - 200px)!important;
+		.timepicker-wrapper{
+			width: 100%!important;
+			.custom-button{
+				margin-left: auto;
+				margin-right: 9px;
+			}
+		}
+	}
+}

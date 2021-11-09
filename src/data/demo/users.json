@@ -1,0 +1,737 @@
+[
+	{
+		"id": 1,
+		"firstName": "Kazik",
+		"lastName": "Waraksa",
+		"description":"Intern",
+		"username": "k.waraksa@oxplus.com",
+		"profile": null,
+		"phoneNr": "333 444 555",
+		"active": true,
+		"createdOn": "6-12-2021",
+		"editedOn": null,
+		"permissions":[
+			{
+				"name":"Work orders",
+				"description":"features related to work orders",
+				"enabled":false,
+				"default":false,
+				"features":[
+					{
+						"name":"Engineer selection",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[]
+					},
+					{
+						"name":"Track selection",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[]
+					},
+					{
+						"name":"Approve work order",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[]
+					},
+					{
+						"name":"Decline work order",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[]
+					}
+				]
+			},
+			{
+				"name":"Monitoring",
+				"description":"features related to work orders",
+				"enabled":false,
+				"default":false,
+				"features":[
+					{
+						"name":"To be allocated work orders",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[
+							{
+								"name":"Work order type selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Work order duration selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Outillage selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Required qualifications selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							}
+						]
+					},
+
+					{
+						"name":"Allocated work orders",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[
+							{
+								"name":"Work order type selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Work order duration selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Outillage selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Required qualifications selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Re-plan work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Refuse work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							}
+						]
+					},
+					{
+						"name":"Denied work orders",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[
+							{
+								"name":"Work order type selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Work order duration selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Outillage selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Required qualifications selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Re-plan work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Refuse work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							}
+						]
+					},
+					{
+						"name":"Logistical work orders",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[
+							{
+								"name":"Work order type selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Work order duration selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Outillage selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Required qualifications selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Re-plan work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Refuse work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 2,
+		"firstName": "Richard",
+		"lastName": "Noppert",
+		"description":"Admin",
+		"username": "r.noppert@oxplus.com",
+		"profile": null,
+		"phoneNr": "222 111 333",
+		"active": true,
+		"createdOn": "1-1-2020",
+		"editedOn": null,
+		"permissions":[
+			{
+				"name":"Work orders",
+				"description":"features related to work orders",
+				"enabled":false,
+				"default":false,
+				"features":[
+					{
+						"name":"Engineer selection",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[]
+					},
+					{
+						"name":"Track selection",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[]
+					},
+					{
+						"name":"Approve work order",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[]
+					},
+					{
+						"name":"Decline work order",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[]
+					}
+				]
+			},
+			{
+				"name":"Monitoring",
+				"description":"features related to work orders",
+				"enabled":false,
+				"default":false,
+				"features":[
+					{
+						"name":"To be allocated work orders",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[
+							{
+								"name":"Work order type selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Work order duration selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Outillage selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Required qualifications selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							}
+						]
+					},
+
+					{
+						"name":"Allocated work orders",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[
+							{
+								"name":"Work order type selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Work order duration selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Outillage selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Required qualifications selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Re-plan work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Refuse work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							}
+						]
+					},
+					{
+						"name":"Denied work orders",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[
+							{
+								"name":"Work order type selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Work order duration selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Outillage selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Required qualifications selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Re-plan work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Refuse work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							}
+						]
+					},
+					{
+						"name":"Logistical work orders",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[
+							{
+								"name":"Work order type selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Work order duration selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Outillage selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Required qualifications selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Re-plan work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Refuse work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 3,
+		"firstName": "Jan",
+		"lastName": "Klaasens",
+		"description":"Guest",
+		"username": "j.klaasens@hotmail.com",
+		"profile": null,
+		"phoneNr": "111 222 333",
+		"active": false,
+		"createdOn": "4-6-2021",
+		"editedOn": null,
+		"permissions":[
+			{
+				"name":"Work orders",
+				"description":"features related to work orders",
+				"enabled":false,
+				"default":false,
+				"features":[
+					{
+						"name":"Engineer selection",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[]
+					},
+					{
+						"name":"Track selection",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[]
+					},
+					{
+						"name":"Approve work order",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[]
+					},
+					{
+						"name":"Decline work order",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[]
+					}
+				]
+			},
+			{
+				"name":"Monitoring",
+				"description":"features related to work orders",
+				"enabled":false,
+				"default":false,
+				"features":[
+					{
+						"name":"To be allocated work orders",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[
+							{
+								"name":"Work order type selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Work order duration selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Outillage selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Required qualifications selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							}
+						]
+					},
+
+					{
+						"name":"Allocated work orders",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[
+							{
+								"name":"Work order type selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Work order duration selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Outillage selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Required qualifications selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Re-plan work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Refuse work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							}
+						]
+					},
+					{
+						"name":"Denied work orders",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[
+							{
+								"name":"Work order type selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Work order duration selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Outillage selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Required qualifications selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Re-plan work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Refuse work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							}
+						]
+					},
+					{
+						"name":"Logistical work orders",
+						"description":"features related to work orders",
+						"enabled":false,
+						"default":false,
+						"features":[
+							{
+								"name":"Work order type selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Work order duration selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Outillage selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Required qualifications selection",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Re-plan work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							},
+							{
+								"name":"Refuse work order",
+								"description":"features related to work orders",
+								"enabled":false,
+								"default":false,
+								"features":[]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

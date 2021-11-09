@@ -1,0 +1,7 @@
+import 'vue-ctk-date-time-picker/dist/vue-ctk-date-time-picker.css'
+import '@mdi/font/css/materialdesignicons.css'
+import '@/plugins/virtual-scroller/dist/vue-virtual-scroller.css'
+import 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css'
+import 'font-awesome/css/font-awesome.css'
+import 'material-icons/iconfont/material-icons.css'
+import '@/assets/scss/global.scss'
