@@ -6,7 +6,7 @@ Worked on these components
 - src/App.vue
 - src/notes.md
 
-Everything in src/
+Worked on everything found in src/ in these folders
 - views
 - store
 - services
