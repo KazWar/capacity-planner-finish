@@ -1,18 +1,16 @@
 # OXplus-capacityplanner
 
-## Build Setup
+Worked on these components
+vite.config.js
+src/main.js
+src/App.vue
+src/notes.md
+Everything in src/
+views
+store
+services
+plugins
+data
+common
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+And various bug fixes, style fixes, gui fixes spread around the entireity of the project.
